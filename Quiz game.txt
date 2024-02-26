@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class BrainTeaserGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Welcome to the Brain Teaser Game!");
+        System.out.println("Try to solve this riddle:");
+        System.out.println("I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?");
+        
+        String answer = scanner.nextLine();
+        
+        if (answer.equalsIgnoreCase("echo")) {
+            System.out.println("Congratulations! You solved the riddle!");
+        } else {
+            System.out.println("Sorry, that's incorrect. The correct answer is 'echo'.");
+        }
+        
+        scanner.close();
+    }
+}
